@@ -1,13 +1,15 @@
-import axios from "axios"
+/** @format */
+
+import axios from "axios";
 import { GETPRODUCT_REQUEST, HIGH_TO_LOW, LOW_TO_HIGH } from "./actionTypes";
 
 // action for get products request
 export const getProductsReq = (payload) => {
-    return{
-        type: GETPRODUCT_REQUEST,
-        payload,
-    }
-}
+  return {
+    type: GETPRODUCT_REQUEST,
+    payload,
+  };
+};
 // export const getproductsData = () => (dispatch) => {
 //   axios .get("https://movie-fake-server.herokuapp.com/products")
 //       .then((data) => {
@@ -19,7 +21,7 @@ export const getProductsReq = (payload) => {
 //     });
 // };
 
-// export const 
+// export const
 
 // action for get products success
 
@@ -33,7 +35,6 @@ const getProductsFailure = () => ({});
 const getproductsData = () => ({});
 
 // action object for sort  feature
-
 
 export const sortProducts = (payload) => {
   return {
